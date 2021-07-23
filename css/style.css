@@ -1,0 +1,139 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Karla', sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(204, 43%, 93%);   
+}
+
+.price_card{
+    background-color: white;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+}
+
+.price_card .row_1{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px;
+}
+.row_1 h2{
+    color: hsl(179, 62%, 43%);
+    margin: 10px 0;
+    font-weight: 700;
+}
+.row_1 .free_trial{
+    color: hsl(71, 73%, 54%);
+    margin: 10px 0;
+    font-size: 16px;
+    font-weight: 400;
+
+}
+.row_1 .message {
+    color: hsl(218, 22%, 67%);
+    margin: 10px 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23px;
+
+}
+
+.price_card .row_2{
+    display: flex;
+    flex-direction: row;
+    border-radius: 12px ;
+}
+
+.row_2 .col_1,.row_2 .col_2{
+    width: 50%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.row_2 .col_1{
+    border-radius: 0 0 0 12px ;
+    padding: 20px 30px;
+    background-color: hsl(179, 62%, 43%);
+}
+
+.row_2 .col_2{
+    border-radius: 0 0 12px 0 ;
+    padding: 20px 30px;
+    background-color: hsl(179, 69%, 53%) ;
+}
+.row_2 .col_1 p{
+    font-size: 16px;
+    font-weight: 400;
+    margin: 10px 0;
+}
+.row_2 .col_1 p span {
+    font-size: 30px;
+    font-weight: 700;
+}
+#btn_signup{
+    background-color: hsl(71, 73%, 54%); 
+    color: white;
+    font-size: 19px;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    width: 100%;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.10);
+    margin: 12px 0;
+    align-self: center;
+    
+}
+#btn_signup:hover{
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.20);
+    cursor: pointer;
+    background-color: hsl(71, 78%, 45%); 
+
+}
+
+.row_2 .col_2 h2{
+    margin: 10px 0;
+    font-weight: 700;
+}
+
+.row_2 .col_2 p{
+    line-height: 23px;
+    max-width: 65%;
+}
+
+
+@media screen and (max-width: 650px){
+    body{
+        height: auto;
+    }
+    .price_card .row_1{
+        padding: 20px;
+    }
+
+    .price_card .row_2 {
+        display: flex;
+        flex-direction: column;
+    }
+    .row_2 .col_1, .row_2 .col_2 {
+        width: 100%;
+        border-radius: 0;
+        padding: 20px;
+    }
+    .row_2 .col_2{
+        border-radius: 0 0 12px 12px;
+    }
+    .row_2 .col_2 p{
+        max-width: 90%;
+    }
+    
+    
+    
+}
